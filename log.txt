@@ -1,0 +1,22 @@
+Array
+(
+    [nature] => Mariage
+    [date] => 2026-02-19
+    [ville] => Annecy
+    [cuisine] => Française
+    [preparation] => Fait maison
+    [service] => Service à table
+    [heure] => 17:30
+    [participants] => 20
+    [age] => Adultes
+    [budget] => 3000
+    [musique] => Oui, DJ
+    [societe] => Mwoibaco
+    [nom] => Ousseni
+    [prenom] => Ansufdine
+    [postal] => 74000
+    [tel] => 0630705288
+    [email] => ansufdine.osn@gmail.com
+    [commentaires] => “Service impeccable ! J’ai trouvé un traiteur en moins de 24h pour mon mariage. Merci MonTraiteur !”
+    [maxDevis] => 1 seul devis
+)

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Demande de devi</title>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-content">
+            <h1 class="logo"><i class="fas fa-utensils"></i> MonTraiteur</h1>
+            
+            <nav class="nav-desktop">
+              <ul class="nav-links" id="nav-links">
+                <li><a href="#acceuil">Accueil</a></li>
+                <li><a href="#benefits">Services</a></li>
+                <li><a href="#how-it-works">Comment ça marche</a></li>
+                <li><a href="mailto:contact@montraiteur.biz">Contact</a></li>
+                <li><a href="devi.html" class="btn btn-small">Commencer</a></li>
+              </ul>
+            </nav>
+          
+            <button class="burger" id="burger" aria-label="Menu">
+              <i class="fas fa-bars" id="burger-icon"></i>
+            </button>
+          </div>
+      </header>
+
+      <main class="container" style="padding-top: 3rem;">
+        <h2 class="section-title">A propos de votre événement :</h2>
+      
+        <form action="#" method="post" class="form-grid" id="form-evenement">
+          <div class="form-group">
+            <label for="nature">Nature de l'évènement *</label>
+            <select id="nature">
+                <option disabled selected>---</option>
+                <option>Anniversaire</option>
+                <option>Mariage</option>
+                <option>Soirée d'entreprise</option>
+                <option>Autre</option>
+              </select>
+          </div>
+          <div class="form-group">
+            <label for="date">Date de l'évènement *</label>
+            <input type="date" id="date" />
+          </div>
+          <div class="form-group">
+            <label for="ville">Ville de votre évènement *</label>
+            <input type="text" id="ville" placeholder="Où se déroulera votre événement ?" />
+          </div>
+          <div class="form-group">
+            <label for="cuisine">Type de cuisine *</label>
+            <select id="cuisine">
+                <option disabled selected>---</option>
+                <option>Française</option>
+                <option>Orientale</option>
+                <option>Italienne</option>
+                <option>Végétarienne</option>
+                <option>Autre</option>
+              </select>
+          </div>
+          <div class="form-group">
+            <label for="preparation">Préparation</label>
+            <select id="preparation">
+                <option disabled selected>---</option>
+                <option>Fait maison</option>
+                <option>Industriel</option>
+                <option>Peu importe</option>
+              </select>
+          </div>
+          <div class="form-group">
+            <label for="service">Type de Service *</label>
+            <select id="service">
+                <option disabled selected>---</option>
+                <option>Livraison uniquement</option>
+                <option>Service à table</option>
+                <option>Buffet</option>
+              </select>
+          </div>
+          <div class="form-group">
+            <label for="heure">Heure de début *</label>
+            <input type="time" id="heure" value="12:30" />
+          </div>
+          <div class="form-group">
+            <label for="participants">Nombre de participants *</label>
+            <input type="number" id="participants" />
+          </div>
+          <div class="form-group">
+            <label for="age">Moyenne d'âge</label>
+            <select id="age">
+                <option disabled selected>---</option>
+                <option>Enfants</option>
+                <option>Adultes</option>
+                <option>Mixte</option>
+              </select>
+          </div>
+          <div class="form-group">
+            <label for="budget">Estimation Budget Traiteur *</label>
+            <input type="text" id="budget" placeholder="Saisir une estimation de votre budget Traiteur" />
+          </div>
+          <div class="form-group">
+            <label for="musique">Avez-vous besoin d’un DJ / Groupe de Musique ? *</label>
+            <select id="musique">
+                <option disabled selected>---</option>
+                <option>Oui, DJ</option>
+                <option>Oui, Groupe</option>
+                <option>Non</option>
+              </select>
+          </div>
+        </form>
+      
+        <h2 class="section-title">A propos de vous :</h2>
+      
+        <form action="#" method="post" class="form-grid" id="form-client">
+          <div class="form-group">
+            <label for="societe">Société</label>
+            <input type="text" id="societe" placeholder="Quel est le nom de votre société ?" />
+          </div>
+          <div class="form-group">
+            <label for="nom">Nom *</label>
+            <input type="text" id="nom" placeholder="Quel est votre nom ?" />
+          </div>
+          <div class="form-group">
+            <label for="prenom">Prénom *</label>
+            <input type="text" id="prenom" placeholder="Quel est votre prénom ?" />
+          </div>
+          <div class="form-group">
+            <label for="postal">Code Postal *</label>
+            <input type="text" id="postal" placeholder="Quel est votre code postal ?" />
+          </div>
+          <div class="form-group">
+            <label for="tel">Téléphone portable *</label>
+            <input type="tel" id="tel" placeholder="Quel est votre numéro de téléphone portable ?" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" placeholder="Quel est votre adresse email ?" />
+          </div>
+          <div class="form-group" style="grid-column: span 2;">
+            <label for="commentaires">Commentaires</label>
+            <textarea id="commentaires" placeholder="N'hésitez pas à laisser un commentaire pour signaler toute information utile..."></textarea>
+          </div>
+          <div class="form-group">
+            <label for="max-devis">Nombre maximum de devis *</label>
+            <select id="max-devis">
+                <option disabled selected>---</option>
+                <option>1 seul devis</option>
+                <option>2 à 3 devis</option>
+                <option>4 à 5 devis</option>
+                <option>Peu importe</option>
+              </select>
+          </div>
+          <div class="form-group" style="grid-column: span 2;">
+            <button type="submit" id="envoyer">Envoyer ma demande</button>
+          </div>
+        </form>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-grid">
+      
+          <!-- Bloc 1 : Logo & slogan -->
+          <div class="footer-col">
+            <h3 class="logo"><i class="fas fa-utensils"></i> MonTraiteur</h3>
+            <p>La plateforme n°1 pour trouver le traiteur parfait pour tous vos événements.</p>
+          </div>
+      
+          <!-- Bloc 2 : Navigation -->
+          <div class="footer-col">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#">Accueil</a></li>
+              <li><a href="#">Comment ça marche</a></li>
+              <li><a href="#">Avantages</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+      
+          <!-- Bloc 3 : Contact -->
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <p><i class="fas fa-envelope"></i> contact@montraiteur.biz</p>
+            <p><i class="fas fa-map-marker-alt"></i> 11 Rue Maurice Grandcoing, 94200 Ivry-sur-Seine</p>
+          </div>
+      
+        </div>
+      
+        <!-- Mentions légales -->
+        <div class="footer-bottom">
+          <p>© 2025 MonTraiteur. Tous droits réservés. | <a href="https://ansufd1ne.github.io/portfol1o/mentions-legales.html">Mentions légales</a></p>
+        </div>
+      </footer>
+
+      <script>
+        const burger = document.getElementById('burger');
+        const navLinks = document.getElementById('nav-links');
+        const burgerIcon = document.getElementById('burger-icon');
+
+        // ✅ Ouvre/ferme le menu quand on clique sur le bouton burger
+        burger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+
+        // Change l’icône
+        if (navLinks.classList.contains('show')) {
+            burgerIcon.classList.remove('fa-bars');
+            burgerIcon.classList.add('fa-times');
+        } else {
+            burgerIcon.classList.remove('fa-times');
+            burgerIcon.classList.add('fa-bars');
+        }
+        });
+
+        // ✅ Ferme le menu quand on clique sur un lien
+        const links = document.querySelectorAll('.nav-links a');
+        links.forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('show');
+            burgerIcon.classList.remove('fa-times');
+            burgerIcon.classList.add('fa-bars');
+        });
+        });
+
+
+        document.getElementById("form-client").addEventListener("submit", function (e) {
+            e.preventDefault(); // Empêche l'envoi classique
+        
+            const data = {
+              // --- Données événement ---
+              nature: document.getElementById("nature").value,
+              date: document.getElementById("date").value,
+              ville: document.getElementById("ville").value,
+              cuisine: document.getElementById("cuisine").value,
+              preparation: document.getElementById("preparation").value,
+              service: document.getElementById("service").value,
+              heure: document.getElementById("heure").value,
+              participants: document.getElementById("participants").value,
+              age: document.getElementById("age").value,
+              budget: document.getElementById("budget").value,
+              musique: document.getElementById("musique").value,
+        
+              // --- Données client ---
+              societe: document.getElementById("societe").value,
+              nom: document.getElementById("nom").value,
+              prenom: document.getElementById("prenom").value,
+              postal: document.getElementById("postal").value,
+              tel: document.getElementById("tel").value,
+              email: document.getElementById("email").value,
+              commentaires: document.getElementById("commentaires").value,
+              maxDevis: document.getElementById("max-devis").value
+            };
+        
+            // ✅ Envoie vers un fichier PHP (ex. traitement.php)
+            fetch("traitement.php", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json"
+              },
+              body: JSON.stringify(data)
+            })
+            .then(response => {
+              if (!response.ok) throw new Error("Erreur serveur");
+              return response.text();
+            })
+            .then(message => {
+              alert("✅ Demande envoyée !");
+              console.log("Réponse serveur :", message);
+            })
+            .catch(error => {
+              alert("❌ Une erreur est survenue. Vérifie ta connexion ou le fichier traitement.php.");
+              console.error(error);
+            });
+          });
+      </script>
+</body>
+</html>
