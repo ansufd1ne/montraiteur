@@ -487,7 +487,7 @@ body {
     color: #1a1a1a;
     margin-bottom: 0.5rem;
     position: relative;
-    text-align: left;
+    text-align: center;
   }
   
   h2.section-title::after {
